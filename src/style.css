@@ -1,0 +1,145 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+  
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+/* End of CSS reset */
+body {
+    background-color: #f8f7f3;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #1a24fb;
+    color: #f8f7f3;  
+    z-index: 1;
+}
+
+.h-title {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+header > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 20px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 50px;
+    
+}
+
+.card-container {
+    position: relative;
+}
+
+.inner-text {
+    max-width: 350px;
+    height: 450px;
+    background-color: #f8f7f3;
+    color: #1a24fb;
+    border: 1px solid #1a24fb;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px;
+}
+
+.index {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.author {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.title {
+    height: 100px;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.card-container > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 18px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #1a24fb;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card-container > button:hover {
+    background-color: #1a24fb;
+    color: #f8f7f3;
+}
+
+.arrow {
+    font-size: 18px;
+}
