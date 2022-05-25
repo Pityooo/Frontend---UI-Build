@@ -54,11 +54,9 @@ const books = {
 			text: "At first, only a few things are known about the celestial object that astronomers dub Rama. It is huge, weighing more than ten trillion tons. And it is hurtling through the solar system at an inconceivable speed. Then a space probe confirms the unthinkable: Rama is no natural object..."
 		}
 	]
-}
-console.log(books);
+};
 
-const cardComponent =
-	books.cards.map((card, i)=> `
+const cardComponent = books.cards.map((card, i)=> `
 		<div class="card-container">
 			<div class="inner-text">
 				<p class="index">${i+1}</p>
@@ -71,10 +69,11 @@ const cardComponent =
 				<span class="material-icons arrow">east</span>
 			</button>
 		</div>
-	`).join('')
+	`).join('');
 
 const loadEvent = () => {
-	console.log('Hello')
-	document.getElementById('root').insertAdjacentHTML('beforeend', cardComponent)}
+	console.log('Hello');
+	document.getElementById('root').insertAdjacentHTML('beforeend', cardComponent);
+}
 
-window.addEventListener('load', loadEvent)
+window.addEventListener('load', loadEvent);
